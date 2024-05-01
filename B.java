@@ -1,22 +1,24 @@
-package Str.Ranu1;
+class B {
 
- public class  B{
-
-	public static void main(String[] args) {
-		int[]a= {1,2,1,1,3,4,4,5};
-		System.out.println("enter dublicate elements are");
-		for(int i=0;i<a.length-1;i++)
+	public static void main(String[] args) 
+	{
+		System.out.println("1");
+		try
 		{
-			for(int j=i+1;j<a.length;j++)
-			{
-			if(a[i]==a[j] && (i!=j))
-			{
-				System.out.println(a[j]);
+			System.out.println("2");
+			int a=100, b=2, c;
+			System.out.println("3");
+			c=a/b;
+			System.out.println("4");
+			System.out.println(c);
+			System.out.println("5");
 			}
-
+		catch(ArithmeticException e)
+		{
+System.out.println("6");
+System.out.println(e);
+System.out.println("7");
+}
+		System.out.println("hello");
 	}
-		}
-	}
- }
-
-
+}
