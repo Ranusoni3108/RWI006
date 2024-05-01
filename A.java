@@ -1,17 +1,12 @@
-class A {
-
-	public static void main(String[] args) {
-		try {
-int a=100,b=0,c;
-c=a/b;
-System.out.println(c);
-	}
-		catch(Exception e)
-		{
-			System.out.println("you can not divide by zero");
-			
-		}
-		System.out.println("hello");
-
+public class A extends Thread
+{
+public void run()
+{
+System.out.println("This is a thread class");
 }
+public static void main(String[] args) 
+{
+ A a=new A();
+ a.start();
+ }
 }
