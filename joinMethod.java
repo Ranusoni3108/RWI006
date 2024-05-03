@@ -18,7 +18,7 @@ public class joinMethod extends Thread
 	}
 	}
 
-	public static void main(String[] args)throws InterruptedException
+	public static void main(String[]args) throws InterruptedException
 	{
 		joinMethod t1=new joinMethod();
 		t1.start();
